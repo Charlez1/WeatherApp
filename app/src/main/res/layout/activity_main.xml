@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".presentation.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/city_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:hint="@string/enter_your_city"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="@string/start_city"
+            android:textColor="@color/black"
+            android:textColorHint="@color/other_text_color"
+            android:textSize="@dimen/big_text_size" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/weather_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_weather_info" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/black" />
+
+</FrameLayout>

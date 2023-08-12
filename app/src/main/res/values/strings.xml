@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <string name="today_text">TODAY</string>
+    <string name="enter_your_city">Enter your city</string>
+
+    <string name="connection_error">Network error. Please check your internet connection and try again</string>
+    <string name="backend_error">An error occurred while fetching weather data from server.</string>
+    <string name="other_error">An unexpected error occurred.</string>
+
+    <string name="start_city">Moscow</string>
+
+</resources>

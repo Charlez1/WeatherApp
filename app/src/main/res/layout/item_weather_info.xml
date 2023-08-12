@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/weather_info_item_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/weather_info_item_bg_color"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/day_of_week"
+        android:layout_width="@dimen/day_of_week_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:text="TODAY"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text_size"
+        android:textColor="@color/day_of_week_text_color"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/day_of_month"/>
+
+    <TextView
+        android:id="@+id/day_of_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:text="05"
+        android:textSize="@dimen/medium_text_size"
+        android:textColor="@color/other_text_color"
+
+        app:layout_constraintLeft_toLeftOf="@id/day_of_week"
+        app:layout_constraintTop_toBottomOf="@id/day_of_week"/>
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="wrap_content"
+        android:src="@drawable/test_icon"
+
+        app:layout_constraintLeft_toRightOf="@id/day_of_week"
+        app:layout_constraintRight_toLeftOf="@id/temperature"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        android:text="20°C"
+        android:textSize="@dimen/big_text_size"
+        android:textColor="@color/temperature_text_color"
+
+        app:layout_constraintLeft_toRightOf="@id/icon"
+        app:layout_constraintRight_toLeftOf="@id/description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:text="Partly cloudy"
+        android:textColor="@color/other_text_color"
+        android:textSize="@dimen/medium_text_size"
+
+        app:layout_constraintLeft_toRightOf="@id/temperature"
+        app:layout_constraintRight_toLeftOf="@id/wind_speed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        android:text="40%"
+        android:textColor="@color/other_text_color"
+        android:textSize="@dimen/small_text_size"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wind_speed"
+        app:layout_constraintRight_toRightOf="@id/wind_speed"
+        app:layout_constraintLeft_toRightOf="@id/description"/>
+
+    <TextView
+        android:id="@+id/wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        android:text="2kph"
+        android:textColor="@color/other_text_color"
+        android:textSize="@dimen/small_text_size"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/description"
+        app:layout_constraintTop_toBottomOf="@id/humidity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="day_of_week_width">52dp</dimen>
+    <dimen name="icon_width">64dp</dimen>
+    <dimen name="weather_info_item_height">80dp</dimen>
+
+    <dimen name="margin_very_small">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_big">80dp</dimen>
+
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="big_text_size">20sp</dimen>
+    <dimen name="title_text_size">25sp</dimen>
+
+
+</resources>
